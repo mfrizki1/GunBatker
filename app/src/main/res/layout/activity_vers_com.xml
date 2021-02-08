@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VersComActivity">
+
+    <ImageView
+        android:id="@+id/img_title_com_player"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txt_player1_com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/roboto_mono"
+        android:text="TextView"
+        android:textColor="#101010"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_title_com_player" />
+
+    <TextView
+        android:id="@+id/txt_player2_com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="@font/roboto_mono"
+        android:text="Computer"
+        android:textColor="#101010"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_title_com_player" />
+
+    <ImageView
+        android:id="@+id/img_batu_player1_com"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="batu"
+        app:layout_constraintEnd_toEndOf="@+id/txt_player1_com"
+        app:layout_constraintStart_toStartOf="@+id/txt_player1_com"
+        app:layout_constraintTop_toBottomOf="@+id/txt_player1_com"
+        app:srcCompat="@drawable/batu" />
+
+    <ImageView
+        android:id="@+id/img_batu_player2_com"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="batu"
+        app:layout_constraintEnd_toEndOf="@+id/txt_player2_com"
+        app:layout_constraintStart_toStartOf="@+id/txt_player2_com"
+        app:layout_constraintTop_toBottomOf="@+id/txt_player2_com"
+        app:srcCompat="@drawable/batu" />
+
+    <ImageView
+        android:id="@+id/img_gunting_player1_com"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:contentDescription="gunting"
+        app:layout_constraintEnd_toEndOf="@+id/img_batu_player1_com"
+        app:layout_constraintStart_toStartOf="@+id/img_batu_player1_com"
+        app:layout_constraintTop_toBottomOf="@+id/img_batu_player1_com"
+        app:srcCompat="@drawable/gunting" />
+
+    <ImageView
+        android:id="@+id/img_gunting_player2_com"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:contentDescription="gunting"
+        app:layout_constraintEnd_toEndOf="@+id/img_batu_player2_com"
+        app:layout_constraintStart_toStartOf="@+id/img_batu_player2_com"
+        app:layout_constraintTop_toBottomOf="@+id/img_batu_player2_com"
+        app:srcCompat="@drawable/gunting" />
+
+    <ImageView
+        android:id="@+id/img_kertas_player1_com"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="kertas"
+        app:layout_constraintEnd_toEndOf="@+id/img_gunting_player1_com"
+        app:layout_constraintStart_toStartOf="@+id/img_gunting_player1_com"
+        app:layout_constraintTop_toBottomOf="@+id/img_gunting_player1_com"
+        app:srcCompat="@drawable/kertas" />
+
+    <ImageView
+        android:id="@+id/img_kertas_player2_com"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="kertas"
+        app:layout_constraintEnd_toEndOf="@+id/img_gunting_player2_com"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/img_gunting_player2_com"
+        app:layout_constraintTop_toBottomOf="@+id/img_gunting_player2_com"
+        app:srcCompat="@drawable/kertas" />
+
+    <ImageView
+        android:id="@+id/img_back_home"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_close" />
+
+    <ImageView
+        android:id="@+id/img_refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_refresh" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
